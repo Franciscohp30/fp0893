@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Analise</title>
+  </head>
+  <body>
+      <h1>Cadastro de usuário</h1>
+      <form method="post">
+        {% csrf_token %}
+        Nome Usuário:    {{ form.username }}<br>
+        Senha:           {{ form.password1 }}<br>
+        Confrimar Senha: {{ form.password2 }}<br>
+        <!--{{ form.as_p }}--> <!--Carrega todos os campos-->
+        <button onclick="submit">Salvar</button>
+      </form>
+
+
+
+  </body>
+</html>
